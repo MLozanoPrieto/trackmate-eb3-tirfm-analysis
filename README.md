@@ -178,6 +178,11 @@ Below, “per cell” always means aggregation **across tracks in that cell**.
 
 ### Tracks (most informative for growth dynamics)
 
+- **`N_TRACKS` (per cell):**  
+  *What it is.* Count of EB3-GFP growth events detected as **unique tracks** within the acquisition window.  
+  *Why it matters.* Approximates the **frequency of plus-end growth initiation**; informative about nucleation when interpreted together with **speed** and **duration**.  
+  *Caveats.* Sensitive to **track fragmentation** (linking/gap settings), **quality thresholds**, **frame interval**, **video duration**, and **EB3-GFP expression**. Compare only across datasets with **matched** parameters and acquisition settings.
+
 - **`TRACK_MEDIAN_SPEED` (per‑cell: median of medians; also see edges percentiles):**  
   *What it is.* The typical **growth speed** of an EB3 comet along each track.  
   *Why it matters.* Reflects the **tubulin polymerization rate** at the plus‑end.  
@@ -255,7 +260,7 @@ pip install numpy pandas scipy seaborn matplotlib
 
 ### What the script does **not** do
 - It does **not** detect/tracks comets (TrackMate must export the CSVs).  
-- It ignores any `*all-spots*.csv` files and does not parse **spots** reports as metrics.  
+- It ignores any `*all-spots*.csv` files and does not parse **spots** reports as metrics.  - It does **not** normalize `N_TRACKS` by time or area; it reports the **raw count per cell**.
 - It does **not** compute appearance rates from `TRACK_START/STOP`, gap metrics, or normalize by **cell area**.  
 - It does **not** convert/standardize units; it trusts the TrackMate CSV values.  
 - It does **not** Δt‑weight edge summaries; it assumes that frame intervals (Δt) are the same across tracks.
@@ -306,6 +311,9 @@ The expected outputs are provided under `examples/dummy_dataset/expected_output/
 
 - **Too many false links**  
   Reduce **linking distance** and/or **gap‑closing distance** in TrackMate; consider mild pre‑filtering and a higher quality threshold.
+  
+- **Unexpectedly high/low `N_TRACKS`**  
+  Check TrackMate **linking** and **gap-closing** distances and **quality thresholds**. Over-fragmentation inflates counts; overly strict thresholds deflate them. Ensure comparable **video duration** across cells and conditions.
 
 ---
 
