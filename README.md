@@ -118,6 +118,7 @@ Metadata:
 - `Experiment`, `Condition`, `Plate`, `Cell`
 
 Per‑cell metrics from **tracks** (medians unless noted):
+- `N_TRACKS` — number of **unique tracks** in the cell (unique `TRACK_ID` / `TRACK_INDEX` in *tracks.csv*).
 - `TRACK_MEDIAN_SPEED_median` — median of each track’s median speed, then median across tracks per cell.  
 - `TRACK_DURATION_median`, `TRACK_DURATION_p90` — track lifetimes (continuous growth).  
 - `CATASTROPHE_RATE` — **approximate** disappearance rate: `1 / mean(TRACK_DURATION)` (use only if few tracks end at the last video frame; see caveats).  
