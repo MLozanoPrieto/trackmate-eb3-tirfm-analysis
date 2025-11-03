@@ -323,7 +323,7 @@ The expected outputs are provided under `examples/dummy_dataset/expected_output/
 If you use this pipeline, please cite **both** the software release and the Methods chapter:
 
 **Software:**  
-Lozano-Prieto M. *TrackMate EB3 TIRFM Analysis Pipeline* (v1.0.0). Zenodo. **DOI:** 10.5281/zenodo.XXXXXXX.
+Lozano-Prieto M. *TrackMate EB3 TIRFM Analysis Pipeline* (v1.0.0).
 
 **Methods chapter:**  
 Gómez-Morón Á, Lozano-Prieto M, Martín Cófreces NB. *: Studying actin and tubulin cytoskeleton dynamics at planar immunological synapses in primary human T lymphocytes through TIRF Microscopy*. Methods in Molecular Biology. 2025.

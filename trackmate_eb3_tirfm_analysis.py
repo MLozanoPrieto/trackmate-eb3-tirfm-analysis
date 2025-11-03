@@ -5,7 +5,6 @@
 """
 trackmate-eb3-tirfm-analysis
 Version: v1.0.0
-DOI: 10.5281/zenodo.XXXXXXX.
 Repository: https://github.com/MLozanoPrieto/trackmate-eb3-tirfm-analysis
 License: see LICENSE file in this repository
 
@@ -55,7 +54,6 @@ If you use this pipeline, please cite both the software release and the Methods 
 
 Software:
     Lozano-Prieto M. TrackMate EB3 TIRFM Analysis Pipeline (v1.0.0).
-    Zenodo. DOI: 10.5281/zenodo.XXXXXXX.
 
 Methods chapter:
     Gómez-Morón Á, Lozano-Prieto M, Martín Cófreces NB.

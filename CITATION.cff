@@ -10,9 +10,6 @@ repository-code: "https://github.com/MLozanoPrieto/trackmate-eb3-tirfm-analysis"
 license: MIT
 version: 1.0.0
 date-released: 2025-10-29
-# identifiers:
-#   - type: doi
-#     value: 
 preferred-citation:
   type: software
   title: "TrackMate EB3 TIRFM Analysis Pipeline (v1.0.0)"
@@ -21,7 +18,6 @@ preferred-citation:
       given-names: Marta
       orcid: https://orcid.org/0000-0003-3099-3122
   year: 2025
-  # doi: 10.5281/zenodo.X
   url: "https://github.com/MLozanoPrieto/trackmate-eb3-tirfm-analysis"
 contributors:
   - family-names: Gómez-Morón
